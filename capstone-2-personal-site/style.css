@@ -16,7 +16,7 @@ hr {
     left: -10px;
 }
 
-#menu-container > ul {
+#menu-container>ul {
     list-style: none;
 }
 
@@ -76,22 +76,45 @@ hr {
         display: block;
         text-align: center;
     }
+
     #skills-container {
         display: grid;
         grid-template-columns: 1;
         align-items: center;
     }
+
     #skills-image-container {
-        order:1;
+        order: 1;
         text-align: center;
         margin-top: 50px;
     }
+
     #menu-container {
         transform: rotate(90deg);
         top: 90px;
         left: -90px;
     }
+
     #menu-container li {
         display: inline;
+    }
+}
+
+@media (max-width: 320px) {
+    html {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #menu-container {
+        display: none;
+    }
+
+    #hero-image {
+        max-width: 100%;
+    }
+
+    #skills-image {
+        max-width: 100%;
     }
 }
